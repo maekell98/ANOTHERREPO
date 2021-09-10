@@ -1,0 +1,86 @@
+---
+title: "yikesunderstood?"
+author: "maekell98"
+date: "9/9/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+install.packages("stringr")
+
+v <- c("Stately", "plump", "Buck", "Mulligan", "came", "from", "the", "stairhead", "bearing", "a", "bowl", "of", "lather", "on", "which", "a", "mirror", "and", "a", "razor", "lay", "crossed")
+
+str_split(v, 3, n=Inf, simplify=FALSE)
+
+#challenge 1 (cannot figure out str_split; easier way to create vector?)
+
+
+
+
+
+
+m <- matrix(data = 1:80, nrow = 8, ncol = 10, byrow = FALSE)
+m
+
+x <- m[,c(2,3,6)] 
+#part 1 (successful)
+
+x <- m[c(6,8),] 
+#part 2 (successful)
+
+x <- m[c(2,6), c(2,9)]
+#part 3 (extracts the numbers, but also other pairings)
+
+#challenge 2 (mostly successful)
+
+
+
+
+
+
+a <- array(data = 400:1, dim = c(5, 5, 4, 4))
+a
+
+a[1, 1, 1, 2]
+#returns 300
+
+a[2, 3, 2, ]
+#returns 364 264 164  64
+
+a[1:5, 1:5, 3, 3]
+#     [,1] [,2] [,3] [,4] [,5]
+#[1,]  150  145  140  135  130
+#[2,]  149  144  139  134  129
+#[3,]  148  143  138  133  128
+#[4,]  147  142  137  132  127
+#[5,]  146  141  136  131  126
+
+#challenge 3 (I think successful?)
+
+
+
+
+
